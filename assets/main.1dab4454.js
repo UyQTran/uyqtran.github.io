@@ -183,7 +183,7 @@ Error generating stack: `+s.message+`
   height: 150px;
   padding: 0.5rem;
   font-size: 16px;
-  overflow-wrap: break-word;
+  white-space: pre-wrap;
 `,t_=ht(Dm)`
   margin-bottom: 1rem;
   font-size: 16px;
@@ -191,14 +191,14 @@ Error generating stack: `+s.message+`
   color: #282c34;
   margin-top: 0.25rem;
   * {
-    overflow: hidden;
+    overflow-y: hidden;
   }
 
   ${t=>t.isCollapsed?"display: none":""}
 `,s_=ht.div`
   margin-top: 1rem;
 `,o_=t=>{const[e,n]=I.exports.useState(!0);if(I.exports.useEffect(()=>{n(!0)},[t]),t.solutionCode==="")return G(ps,{});const r=t.solutionCode.split(`
-`).length;return G(ps,{children:hn(s_,{children:[G(jT,{component:"button",variant:"body2",onClick:()=>n(!e),children:"L\xF8sningsforlsag"}),G(i_,{isCollapsed:e,children:G(Dm,{readOnly:!0,value:t.solutionCode,height:r*19+"px",extensions:[VS()]})})]})})},l_=ht.div`
+`).length;return G(ps,{children:hn(s_,{children:[G(jT,{component:"button",variant:"body2",onClick:()=>n(!e),children:"Vis l\xF8sningsforslag"}),G(i_,{isCollapsed:e,children:G(Dm,{readOnly:!0,value:t.solutionCode,height:r*19+"px",extensions:[VS()]})})]})})},l_=ht.div`
   width: 850px;
 
   @media only screen and (max-width: 1000px) {
