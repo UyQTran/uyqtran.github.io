@@ -200,6 +200,16 @@ Error generating stack: `+s.message+`
 `,o_=t=>{const[e,n]=I.exports.useState(!0);if(I.exports.useEffect(()=>{n(!0)},[t]),t.solutionCode==="")return G(ps,{});const r=t.solutionCode.split(`
 `).length;return G(ps,{children:hn(s_,{children:[G(jT,{component:"button",variant:"body2",onClick:()=>n(!e),children:"Vis l\xF8sningsforslag"}),G(i_,{isCollapsed:e,children:G(Dm,{readOnly:!0,value:t.solutionCode,height:r*19+"px",extensions:[VS()]})})]})})},l_=ht.div`
   width: 850px;
+  animation: fadeIn 0.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 
   @media only screen and (max-width: 1000px) {
     width: 95%;
@@ -224,4 +234,14 @@ Error generating stack: `+s.message+`
   align-items: center;
   justify-content: center;
   height: 100%;
+  animation: fadeIn 0.5s;
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 `,f_=()=>G(h_,{children:G(TA,{basename:"/",children:G(I.exports.Suspense,{fallback:G("p",{children:"Loading..."}),children:hn(CA,{children:[G(Pa,{path:"/",element:G(_A,{})}),G(Pa,{path:"assignment",element:G(Dy,{}),children:G(Pa,{path:":index",element:G(Dy,{})})})]})})})});const d_=Dx({palette:{mode:"dark",primary:{main:"#EB8C7A"},secondary:{main:"#6390EB"}}});Vh.createRoot(document.getElementById("root")).render(G(rn.StrictMode,{children:G(cI,{theme:d_,children:G(f_,{})})}));
