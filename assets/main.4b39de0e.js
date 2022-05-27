@@ -199,7 +199,7 @@ Error generating stack: `+s.message+`
 `,bW=ht(Um)`
   margin-bottom: 1rem;
   font-size: 16px;
-`,PW=t=>{const[e,n]=I.exports.useState(t.initialCode),[r,i,s]=$W();return I.exports.useEffect(()=>{n(t.initialCode),s()},[t]),Mt(SW,{children:[Y(bW,{value:e,height:"250px",extensions:[ik()],onChange:o=>n(o)}),Mt(ok,{gridColumnCount:{desktop:6,mobile:2},children:[Mt(Vo,{variant:"outlined",onClick:()=>i(e),children:[Y(hm,{}),Y(jy,{children:"Kj\xF8r"})]}),Mt(Vo,{variant:"outlined",onClick:()=>s(),children:[Y(sk,{}),Y(jy,{children:"Nullstill"})]})]}),Y(kW,{children:r})]})};var lk={},ak={exports:{}};/*!
+`,PW=t=>{const[e,n]=I.exports.useState(t.initialCode),[r,i,s]=$W();return I.exports.useEffect(()=>{n(t.initialCode),s()},[t]),Mt(SW,{children:[Y(bW,{"data-cy":"coding-window",value:e,height:"250px",extensions:[ik()],onChange:o=>n(o)}),Mt(ok,{gridColumnCount:{desktop:6,mobile:2},children:[Mt(Vo,{"data-cy":"compile-button",variant:"outlined",onClick:()=>i(e),children:[Y(hm,{}),Y(jy,{children:"Kj\xF8r"})]}),Mt(Vo,{"data-cy":"reset-output-button",variant:"outlined",onClick:()=>s(),children:[Y(sk,{}),Y(jy,{children:"Nullstill"})]})]}),Y(kW,{"data-cy":"output-window",children:r})]})};var lk={},ak={exports:{}};/*!
   Copyright (c) 2018 Jed Watson.
   Licensed under the MIT License (MIT), see
   http://jedwatson.github.io/classnames
@@ -212,7 +212,7 @@ Error generating stack: `+s.message+`
 `,zW=ht.div`
   margin: 1rem;
 `,BW=t=>{const[e,n]=I.exports.useState(!0);if(I.exports.useEffect(()=>{n(!0)},[t]),t.solutionCode==="")return Y(vc,{});const r=t.solutionCode.split(`
-`).length;return Mt(zW,{children:[Y(mA,{component:"button",variant:"body2",onClick:()=>n(!e),children:"Vis l\xF8sningsforslag"}),Y(NW,{id:"solution",duration:500,height:e?0:"auto",children:Y(qW,{children:Y(Um,{readOnly:!0,value:t.solutionCode,height:r*19+"px",extensions:[ik()]})})})]})},FW=ht.div`
+`).length;return Mt(zW,{children:[Y(mA,{"data-cy":"solution-button",component:"button",variant:"body2",onClick:()=>n(!e),children:"Vis l\xF8sningsforslag"}),Y(NW,{duration:150,height:e?0:"auto",children:Y(qW,{children:Y(Um,{readOnly:!0,"data-cy":"solution-code",value:t.solutionCode,height:r*19+"px",extensions:[ik()]})})})]})},FW=ht.div`
   width: 850px;
   animation: fadeIn 0.5s;
 
@@ -234,7 +234,7 @@ Error generating stack: `+s.message+`
   margin: 1rem 0;
 `,UW=ht($l)`
   margin: 1rem 0;
-`,Yy=()=>{const{index:t}=UA(),[e,n]=I.exports.useState();let r=0;typeof t=="string"&&(r=parseInt(t)),I.exports.useEffect(()=>{aE(()=>import("./assignmentData.ec96cc56.js"),[]).then(a=>n(a.default)).catch(a=>null)},[r]);const i=r+1,s=r-1,o=s>=0?"/assignment/"+s:"/";if(!e)return Y(vc,{});let l=e[r];return Mt(FW,{children:[Y(VW,{variant:"h2",children:l.title}),Y(UW,{variant:"subtitle1",children:l.description}),Y(PW,{initialCode:l.initialCode}),Y(BW,{solutionCode:l.solution.code}),Mt(ok,{gridColumnCount:{desktop:5,mobile:2},children:[Y(Vo,{"data-cy":"",component:ed,variant:"outlined",to:o,children:"Tilbake"}),Y(Vo,{component:ed,variant:"contained",to:"/assignment/"+i,disabled:r+1>=e.length,children:"Neste oppgave"})]})]})},jW=ht.div`
+`,Yy=()=>{const{index:t}=UA(),[e,n]=I.exports.useState();let r=0;typeof t=="string"&&(r=parseInt(t)),I.exports.useEffect(()=>{aE(()=>import("./assignmentData.ec96cc56.js"),[]).then(a=>n(a.default)).catch(a=>null)},[r]);const i=r+1,s=r-1,o=s>=0?"/assignment/"+s:"/";if(!e)return Y(vc,{});let l=e[r];return Mt(FW,{children:[Y(VW,{variant:"h2",children:l.title}),Y(UW,{variant:"subtitle1",children:l.description}),Y(PW,{initialCode:l.initialCode}),Y(BW,{solutionCode:l.solution.code}),Mt(ok,{gridColumnCount:{desktop:5,mobile:2},children:[Y(Vo,{"data-cy":"previous-page-button",component:ed,variant:"outlined",to:o,children:"Tilbake"}),Y(Vo,{"data-cy":"next-assignment-button",component:ed,variant:"contained",to:"/assignment/"+i,disabled:r+1>=e.length,children:"Neste oppgave"})]})]})},jW=ht.div`
   display: flex;
   flex-direction: column;
   align-items: center;
