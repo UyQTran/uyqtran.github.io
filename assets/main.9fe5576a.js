@@ -195,6 +195,7 @@ Error generating stack: `+s.message+`
   padding: 0.5rem;
   font-size: 16px;
   white-space: pre-wrap;
+  overflow: auto;
 `,bW=ht(Um)`
   margin-bottom: 1rem;
   font-size: 16px;
