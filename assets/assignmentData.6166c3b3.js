@@ -6,7 +6,7 @@ sqrtX = math.sqrt(x)
 print(sqrtX)`,solution:{solved:6,code:`import math
 x = 36
 sqrtX = math.sqrt(x)
-print('Kvadratroten til ' + x + ' er lik')
+print('Kvadratroten til 36 er lik')
 print(sqrtX)`}},{title:"Oppgave 2: Enkel Pytagoras",description:"Pytagoras sin l\xE6resetning handler om at summen av arealene til katetene i en rettvinklet trekant er lik arealet til hypotenusen. Skriv et program som regner og skriver ut hypotenusen til en trekant der katetene er lik 5 og 12.",text:"Dette er en oppgavetekst",hint:"Dette er et hint",initialCode:"",solution:{solved:13,code:`import math
 kat1 = 5
 kat2 = 12
