@@ -212,15 +212,15 @@ Error generating stack: `+s.message+`
 `,BW=t=>{const[e,n]=I.exports.useState(!0);if(I.exports.useEffect(()=>{n(!0)},[t]),t.solutionCode==="")return Y(vc,{});const r=t.solutionCode.split(`
 `).length;return Mt(zW,{children:[Y(mA,{"data-cy":"solution-button",component:"button",variant:"body2",onClick:()=>n(!e),children:"Vis l\xF8sningsforslag"}),Y(NW,{duration:150,height:e?0:"auto",children:Y(qW,{children:Y(Um,{readOnly:!0,"data-cy":"solution-code",value:t.solutionCode,height:r*19+"px",extensions:[ik()]})})})]})},FW=ht.div`
   width: 850px;
-  animation: fadeIn 0.25s;
+  animation: fadeIn 0.5s;
 
   @keyframes fadeIn {
     0% {
-      opacity:0;
+      opacity: 0.5;
       margin-top: 50px;
     }
     100% {
-      opacity:1;
+      opacity: 1;
       margin-top: 0;
     }
   }
