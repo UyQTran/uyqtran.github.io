@@ -216,7 +216,7 @@ Error generating stack: `+o.message+`
 
   @keyframes fadeIn {
     0% {
-      opacity: 0.5;
+      opacity: 0.25;
       margin-top: 50px;
     }
     100% {
@@ -234,7 +234,7 @@ Error generating stack: `+o.message+`
   margin: ${t=>t.theme.spacing(4,0)};
 `,Mj=gt(va)`
   margin: ${t=>t.theme.spacing(4,0)};
-`,bw=t=>{const{index:e}=J5(),n=Ij(),[r,i]=k.exports.useState();let o=0;typeof e=="string"&&(o=parseInt(e)),k.exports.useEffect(()=>{v_(()=>import("./assignmentData.7c417edd.js"),[]).then(d=>i(d.default)).catch(d=>null)},[o]);const s=o+1,l=o-1,a=l>=0?"/assignment/"+l:"/",u=Nk();if(!r)return H(Wf,{});let c=r[o];const f=async()=>{await n.start(()=>({x:-1200,transition:{duration:.25}})),u(a)},h=async()=>{await n.start(()=>({x:1200,transition:{duration:.25}})),u("/assignment/"+s)};return H(Tj.div,{initial:"visible",animate:n,children:qt(Aj,{children:[H(Ej,{variant:"h2",children:c.title}),H(Mj,{variant:"subtitle1",children:c.description}),H(QB,{initialCode:c.initialCode}),H(HB,{solutionCode:c.solution.code}),qt(WC,{gridColumnCount:{desktop:5,mobile:2},children:[H(Ml,{"data-cy":"previous-page-button",variant:"outlined",onClick:f,children:"Tilbake"}),H(Ml,{"data-cy":"next-assignment-button",variant:"contained",onClick:h,disabled:o+1>=r.length,children:"Neste oppgave"})]})]})},o)},Dj=gt.div`
+`,bw=t=>{document.body.style.overflow="auto";const{index:e}=J5(),n=Ij(),[r,i]=k.exports.useState();let o=0;typeof e=="string"&&(o=parseInt(e)),k.exports.useEffect(()=>{v_(()=>import("./assignmentData.7c417edd.js"),[]).then(d=>i(d.default)).catch(d=>null)},[o]);const s=o+1,l=o-1,a=l>=0?"/assignment/"+l:"/",u=Nk();if(!r)return H(Wf,{});let c=r[o];const f=async()=>{await n.start(()=>({opacity:0,x:-1e3,transition:{duration:.25}})),u(a)},h=async()=>{document.body.style.overflow="hidden",await n.start(()=>({opacity:0,x:1e3,transition:{duration:.25}})),u("/assignment/"+s)};return H(Tj.div,{initial:"visible",animate:n,children:qt(Aj,{children:[H(Ej,{variant:"h2",children:c.title}),H(Mj,{variant:"subtitle1",children:c.description}),H(QB,{initialCode:c.initialCode}),H(HB,{solutionCode:c.solution.code}),qt(WC,{gridColumnCount:{desktop:5,mobile:2},children:[H(Ml,{"data-cy":"previous-page-button",variant:"outlined",onClick:f,children:"Tilbake"}),H(Ml,{"data-cy":"next-assignment-button",variant:"contained",onClick:h,disabled:o+1>=r.length,children:"Neste oppgave"})]})]})},o)},Dj=gt.div`
   display: flex;
   flex-direction: column;
   align-items: center;
