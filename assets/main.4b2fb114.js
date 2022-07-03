@@ -165,7 +165,7 @@ Error generating stack: `+o.message+`
   text-transform: lowercase;
   margin: ${t=>t.theme.spacing(4)};
   font-family: 'Roboto', sans-serif;
-  font-weight: normal;
+  font-weight: 200;
 `,V5=Ue(us)`
   margin: ${t=>t.theme.spacing(4)};
   word-wrap: break-word;
