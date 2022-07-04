@@ -314,17 +314,17 @@ Error generating stack: `+o.message+`
 `,vU=Fe(fs)`
   margin: ${t=>t.theme.spacing(4,0)};
 `,yU=Fe.div`
-  position: fixed;
-  bottom: 2rem;
   display: grid;
-  grid-template-columns: repeat(${t=>t.gridColumnCount.desktop}, 1fr);
+  background: ${t=>t.theme.palette.secondary.dark};
+  align-items: center;
+  grid-template-columns: 1fr 6fr 1fr;
   column-gap: ${t=>t.theme.spacing(4)};
-  
-  @media only screen and (max-width: 900px) {
-    grid-template-columns: repeat(${t=>t.gridColumnCount.mobile}, 1fr);
-    bottom: 1rem;
+
+  @media only screen and (max-width: 1000px) {
+
+    grid-template-columns: 1fr 3fr 1fr;
   }
-`,zw=()=>{document.body.style.overflow="auto";const{index:t}=M_(),e=QT(),[n,r]=b.exports.useState();let i=0;typeof t=="string"&&(i=parseInt(t)),b.exports.useEffect(()=>{lL(()=>import("./assignmentData.ff8a55e9.js"),[]).then(h=>r(h.default)).catch(h=>null)},[i]);const o=i+1,s=i-1,l=s>=0?"/assignment/"+s:"/",a=P0();if(!n)return F(Ff,{});let u=n[i];const c=async()=>{await e.start(()=>({opacity:0,y:250,transition:{duration:.25}})),a(l)},f=async()=>{document.body.style.overflow="hidden",await e.start(()=>({opacity:0,x:-1e3,transition:{duration:.25}})),a("/assignment/"+o)};return tt(mU,{children:[F(U5,{variant:"determinate",value:i/(n.length-1)*100}),tt(DT.div,{initial:"visible",animate:e,children:[F(gU,{variant:"h2",children:u.title}),F(vU,{variant:"subtitle1",children:u.description}),F(n2,{initialCode:u.initialCode}),F(Lq,{solutionCode:u.solution.code})]},i),tt(yU,{gridColumnCount:{desktop:5,mobile:2},children:[F(Ho,{"data-cy":"previous-page-button",variant:"outlined",onClick:c,children:"Tilbake"}),F(Ho,{"data-cy":"next-assignment-button",variant:"contained",onClick:f,disabled:i+1>=n.length,children:"Neste oppgave"})]})]})};var Mv={},OU=Uf.exports;Object.defineProperty(Mv,"__esModule",{value:!0});var _T=Mv.default=void 0,xU=OU(Xf),wU=w0,SU=(0,xU.default)((0,wU.jsx)("path",{d:"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"}),"Home");_T=Mv.default=SU;const $U=Fe.div`
+`,zw=()=>{document.body.style.overflow="auto";const{index:t}=M_(),e=QT(),[n,r]=b.exports.useState();let i=0;typeof t=="string"&&(i=parseInt(t)),b.exports.useEffect(()=>{lL(()=>import("./assignmentData.ff8a55e9.js"),[]).then(h=>r(h.default)).catch(h=>null)},[i]);const o=i+1,s=i-1,l=s>=0?"/assignment/"+s:"/",a=P0();if(!n)return F(Ff,{});let u=n[i];const c=async()=>{await e.start(()=>({opacity:-2,y:250,transition:{duration:.35}})),a(l)},f=async()=>{document.body.style.overflow="hidden",await e.start(()=>({opacity:0,x:-1e3,transition:{duration:.35}})),a("/assignment/"+o)};return tt(mU,{children:[tt(yU,{children:[F(Ho,{"data-cy":"previous-page-button",variant:"outlined",onClick:c,children:"Tilbake"}),F(U5,{variant:"determinate",value:i/(n.length-1)*100}),F(Ho,{"data-cy":"next-assignment-button",variant:"contained",onClick:f,disabled:i+1>=n.length,children:"Neste"})]}),tt(DT.div,{initial:"visible",animate:e,children:[F(gU,{variant:"h2",children:u.title}),F(vU,{variant:"subtitle1",children:u.description}),F(n2,{initialCode:u.initialCode}),F(Lq,{solutionCode:u.solution.code})]},i)]})};var Mv={},OU=Uf.exports;Object.defineProperty(Mv,"__esModule",{value:!0});var _T=Mv.default=void 0,xU=OU(Xf),wU=w0,SU=(0,xU.default)((0,wU.jsx)("path",{d:"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"}),"Home");_T=Mv.default=SU;const $U=Fe.div`
   width: 850px;
   animation: fadeIn 0.5s;
 
