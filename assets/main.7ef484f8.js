@@ -333,6 +333,9 @@ Error generating stack: `+o.message+`
   }
 `,xU=Qe.div`
   min-width: 500px;
+   @media only screen and (max-width: 1000px) {
+    min-width: 0;
+  }
 `,zw=()=>{document.body.style.overflow="auto";const{index:t}=M_(),e=QT(),[n,r]=b.exports.useState();let i=0;typeof t=="string"&&(i=parseInt(t)),b.exports.useEffect(()=>{lL(()=>import("./assignmentData.c3e689bd.js"),[]).then(h=>r(h.default)).catch(h=>null)},[i]);const o=i+1,s=i-1,l=s>=0?"/assignment/"+s:"/",a=P0();if(!n)return F(Ff,{});let u=n[i];const c=async()=>{await e.start(()=>({opacity:-2,y:250,transition:{duration:.35}})),a(l)},f=async()=>{document.body.style.overflow="hidden",await e.start(()=>({opacity:0,x:-1e3,transition:{duration:.35}})),a("/assignment/"+o)};return Xe(mU,{children:[Xe(yU,{children:[F(Ho,{"data-cy":"previous-page-button",variant:"outlined",onClick:c,children:"Tilbake"}),F(U5,{variant:"determinate",value:i/(n.length-1)*100}),F(Ho,{"data-cy":"next-assignment-button",variant:"contained",onClick:f,disabled:i+1>=n.length,children:"Neste"})]}),Xe(DT.div,{initial:"visible",animate:e,children:[F(gU,{variant:"h2",children:u.title}),Xe(OU,{children:[F(vU,{variant:"subtitle1",children:u.description}),Xe(xU,{children:[F(n2,{initialCode:u.initialCode}),F(Lq,{solutionCode:u.solution.code})]})]})]},i)]})};var Mv={},wU=Uf.exports;Object.defineProperty(Mv,"__esModule",{value:!0});var _T=Mv.default=void 0,SU=wU(Xf),$U=w0,bU=(0,SU.default)((0,$U.jsx)("path",{d:"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"}),"Home");_T=Mv.default=bU;const kU=Qe.div`
   width: 850px;
   animation: fadeIn 0.5s;
