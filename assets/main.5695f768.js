@@ -266,6 +266,9 @@ Error generating stack: `+o.message+`
 `,wq=Qe(iv)`
   margin-bottom: ${t=>t.theme.spacing(4)};
   font-size: ${t=>t.theme.typography.h5.fontSize};
+  div {
+    white-space: normal;
+  }
 `,n2=t=>{const[e,n]=b.exports.useState(t.initialCode),[r,i]=vq(),o=()=>{t.runClickCallback(),i(e)};return qe(yq,{children:[F(wq,{"data-cy":"coding-window",value:e,height:"250px",extensions:[t2()],onChange:s=>n(s)}),qe(Ko,{"data-cy":"compile-button",variant:t.isSandbox?"contained":"outlined",onClick:o,children:[F(S0,{}),F(Oq,{children:"Kj\xF8r"})]}),F(xq,{"data-cy":"output-window",children:r})]})};var r2={},i2={exports:{}};/*!
   Copyright (c) 2018 Jed Watson.
   Licensed under the MIT License (MIT), see
