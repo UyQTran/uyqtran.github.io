@@ -36,4 +36,4 @@ print(5 + tall)`}},{title:"Typekonvertering fra tall til streng",description:"El
 kat1 = int(input())
 kat2 = int(input())
 hyp = math.sqrt(kat1*kat1+kat2*kat2)
-print('Hypotenusen til en rettvinklet trekant med kateter' + str(kat1) + ' og ' + str(kat2) + ' er lik ' + str(hyp))`}}];export{e as default};
+print('Hypotenusen til en rettvinklet trekant med kateter ' + str(kat1) + ' og ' + str(kat2) + ' er lik ' + str(hyp))`}}];export{e as default};
