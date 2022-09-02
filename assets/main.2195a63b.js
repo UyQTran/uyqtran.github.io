@@ -335,7 +335,7 @@ Error generating stack: `+o.message+`
 
   @media only screen and (max-width: 1000px) {
     margin-top: ${t=>t.theme.spacing(2)};
-`,AT=()=>{const t=Yf();return F(hU,{children:F("a",{href:"#",onClick:()=>t("/"),children:"progg.it"})})},dU=ke.div`
+`,AT=()=>{const t=Yf();return F(hU,{children:F("a",{href:"",onClick:()=>t("/"),children:"progg.it"})})},dU=ke.div`
   width: 80%;
   animation: fadeIn 0.5s;
 
