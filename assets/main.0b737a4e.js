@@ -230,7 +230,6 @@ Error generating stack: `+o.message+`
   word-wrap: break-word;
   display: flex;
   justify-content: center;
-  width: 100%;
 `,PN=ke.footer`
   position: absolute;
   bottom: 1rem;
