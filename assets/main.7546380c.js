@@ -388,6 +388,11 @@ Error generating stack: `+o.message+`
 `,Bw=Se(Wl)`
   min-width: 140px;
   max-width: 200px;
+
+  @media only screen and (max-width: 1100px) {
+    min-width: 100px;
+    max-width: 200px;
+  }
 `,yU=Se(F5)`
   width: 100%;
 `,qw=()=>{document.body.style.overflow="auto";const{index:t}=I_(),e=Qc(),[n,r]=b.exports.useState(),[i,o]=b.exports.useState(!1),[s,l]=b.exports.useState(!1);let a=0;typeof t=="string"&&(a=parseInt(t)),b.exports.useEffect(()=>{o(!1),EN(()=>import("./assignmentData.89a2e67d.js"),[]).then(m=>r(m.default)).catch(m=>null)},[a]);const u=a+1,c=a-1,f=c>=0?"/assignment/"+c:"/",h=Gf();if(!n)return F(Vl,{});let d=n[a];const p=async()=>{await e.start(()=>({opacity:-2,y:250,transition:{duration:.35}})),h(f)},v=async()=>{document.body.style.overflow="hidden",await e.start(()=>({opacity:0,x:-1e3,transition:{duration:.35}})),h("/assignment/"+u)},O=i&&s&&d.postDescription.shouldShowIfSolved||i&&!d.postDescription.shouldShowIfSolved;return Ee(Vl,{children:[F(ET,{}),Ee(pU,{children:[Ee(gU,{children:[F(Bw,{"data-cy":"previous-page-button",variant:"outlined",onClick:p,children:"Tilbake"}),F(yU,{variant:"determinate",value:a/(n.length-1)*100}),F(Bw,{"data-cy":"next-assignment-button",variant:"contained",onClick:v,disabled:a+1>=n.length||!O,children:"Neste"})]}),Ee(Dc.div,{initial:"visible",animate:e,children:[F(mU,{variant:"h2",children:a+1+": "+d.title}),Ee(vU,{children:[F(hU,{description:d.description,postDescription:d.postDescription.text,shouldShowPostDescription:O}),Ee("div",{children:[F(TT,{initialCode:d.initialCode,runClickCallback:()=>o(!0),outputCallback:m=>l(m.includes(""+d.solution.solved))}),F(uU,{solutionCode:d.solution.code})]})]})]},a)]})]})};var Av={},OU=Uf.exports;Object.defineProperty(Av,"__esModule",{value:!0});var MT=Av.default=void 0,xU=OU(Xf),wU=w0,SU=(0,xU.default)((0,wU.jsx)("path",{d:"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"}),"Home");MT=Av.default=SU;const $U=Se.div`
