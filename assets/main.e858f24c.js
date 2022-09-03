@@ -334,6 +334,8 @@ Error generating stack: `+o.message+`
 
   @media only screen and (max-width: 1000px) {
     margin-top: ${t=>t.theme.spacing(2)};
+  }
+    
 `,DT=()=>{const t=P0();return F(gU,{children:F("a",{href:"",onClick:()=>t("/"),children:"progg.it"})})},QT="user",vU=JSON.parse(localStorage.getItem(QT)||`{"progression":{"intro": {"hasSolved": false, "code": "print('Hei verden!')"}}}`),yU={user:vU,solveProgression:t=>{},setProgressionCode:(t,e)=>{}},rg=b.exports.createContext(yU),OU=be.div`
   width: 80%;
   animation: fadeIn 0.3s;
